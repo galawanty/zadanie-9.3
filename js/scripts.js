@@ -1,18 +1,18 @@
 $(function(){
-	var carouselList = $("#carousel ul");
+	 var carouselList = $("#carousel ul");
     
-  setInterval(changeSlide, 3000);
+    setInterval(changeSlide, 3000);
 
-	function changeSlide() {
-  	carouselList
-  		.animate({marginLeft:-400}, 500, placeFirstSlideAfterLast);
-  };
+    function changeSlide() {
+      carouselList
+  		.animate({marginLeft:-400}, 1000, placeFirstSlideAfterLast);
+    };
 
-  function placeFirstSlideAfterLast(){
-  	carouselList
+    function placeFirstSlideAfterLast(){
+      carouselList
     	.find("li:last")
     	.after(carouselList.find("li:first"));
-    carouselList
-      	.css({marginLeft:0});
-  };
+      carouselList
+      .css({marginLeft:0});
+    };
 });

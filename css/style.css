@@ -2,7 +2,8 @@ body {
 	width: 100%;
 }
 #carousel {
-	border: solid;
+	border: solid white;
+	border-radius: 20px;
 	width: 400px;
   	height: 300px;
   	position: absolute;
